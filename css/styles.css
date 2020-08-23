@@ -522,3 +522,93 @@ img::-moz-selection {
     color: #fff;
     background: 0 0;
 }
+
+.line {
+    height: 25px;
+    min-width: 80%;
+    margin: 0 auto 10px;
+    line-height: 25px;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+
+.line:before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 25px;
+    top: 0;
+    background: #c9c9c9;
+}
+
+.line:after {
+    content: '';
+    background: #9c27b0;
+    height: 25px;
+    transition: ease-in;
+    display: block;
+    width: 100%;
+    animation: line-movement 1 2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.line-c:after {
+    max-width: 98%;
+}
+
+.line-ps:after {
+    max-width: 80%;
+}
+
+.line-matlab:after {
+    max-width: 90%;
+}
+
+.line-git:after {
+    max-width: 100%;
+}
+
+.line-tf:after {
+    max-width: 70%;
+}
+
+.line-oop:after {
+    max-width: 80%;
+}
+
+.line-java:after {
+    max-width: 85%;
+}
+
+.line-python:after {
+    max-width: 90%;
+}
+
+.line-android-studio:after {
+    max-width: 95%;
+}
+
+.line-ml:after {
+    max-width: 80%;
+}
+
+.line-dl:after {
+    max-width: 77%;
+}
+
+.line-keras:after {
+    max-width: 70%;
+}
+
+@keyframes line-movement {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
