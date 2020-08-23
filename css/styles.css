@@ -546,7 +546,7 @@ img::-moz-selection {
     content: '';
     background: #9c27b0;
     height: 25px;
-    transition: ease-in;
+    transition: 0.8s;
     display: block;
     width: 100%;
     animation: line-movement 1 2s;
