@@ -21,4 +21,5 @@ This is my presonal portfolio where it has the following sections
 
 This was built using a template which you can find [here](https://www.bootstrapzero.com/bootstrap-template/landing-zero-free-bootstrap-theme).
 
+# GPL-3.0 License
 The final website is licensed under the GNU General Public License v3.0, refere to [LICENSE](https://github.com/aKhfagy/aKhfagy.github.io/blob/master/LICENSE) to learn more about it.
