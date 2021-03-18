@@ -28,7 +28,74 @@
 
 		gtag('config', 'UA-177326819-1');
 	</script>
+	<style>
+		@keyframes load {
+			from {
+				width: 0%
+			}
+		}
 
+		@-webkit-keyframes load {
+			from {
+				width: 0%
+			}
+		}
+
+		@-moz-keyframes load {
+			from {
+				width: 0%
+			}
+		}
+
+		@-o-keyframes load {
+			from {
+				width: 0%
+			}
+		}
+
+		.bar {
+			background-color: #EEE;
+			padding: 2px;
+			border-radius: 15px;
+			margin-bottom: 5px;
+			font-size: 14px;
+			color: #FFF;
+			font-weight: bold;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+		}
+
+		.bar::before {
+			content: attr(data-skill);
+			background-color: #a6cfe3;
+			display: inline-block;
+			padding: 5px 0 5px 10px;
+			border-radius: inherit;
+			animation: load 2s 0s;
+			-webkit-animation: load 2s 0s;
+			-moz-animation: load 2s 0s;
+			-o-animation: load 2s 0s;
+		}
+
+		.bar.learning::before {
+			width: calc(20% - 10px);
+		}
+
+		.bar.basic::before {
+			width: calc(40% - 10px);
+		}
+
+		.bar.intermediate::before {
+			width: calc(60% - 10px);
+		}
+
+		.bar.advanced::before {
+			width: calc(80% - 10px);
+		}
+
+		.bar.expert::before {
+			width: calc(100% - 10px);
+		}
+	</style>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
@@ -73,8 +140,8 @@
 			</li>
 			<li class="sidebar-nav-item">
 				<a class="js-scroll-trigger" href="contact_info.html">Contact Info</a>
-            </li>
-            <li class="sidebar-nav-item">
+			</li>
+			<li class="sidebar-nav-item">
 				<a class="js-scroll-trigger" href="./assets/Ahmed Khfagy - Resume.pdf">Download Resume</a>
 			</li>
 		</ul>
@@ -97,33 +164,110 @@
 				<hr class="primary">
 			</div>
 			<ul style="font-size: x-large;">
-				<li>C++</li>
-				<li>Problem-Solving</li>
-				<li>MATLAB</li>
-				<li>Git</li>
-				<li>TensorFlow</li>
-				<li>Object-Oriented Programming (OOP)</li>
-				<li>Java</li>
-				<li>Python (Programing Language)</li>
-				<li>Android Studio</li>
-				<li>Machine Learning</li>
-				<li>Deep Learning</li>
-				<li>Keras</li>
-				<li>Julia</li>
-				<li>C#</li>
-				<li>Algorithms</li>
-				<li>Data Structures</li>
-				<li>Data Science</li>
-				<li>Graphic Design</li>
-				<li>Mentoring</li>
-				<li>Leadership</li>
-				<li>Teamwork</li>
-				<li>Competitive Programming</li>
-				<li>Data Classification</li>
+				<li>
+					C++ (LinkedIn Certified)
+					<div class="bar expert" data-skill="C++"></div>
+				</li>
+				<li>
+					Machine Learning
+					<div class="bar intermediate" data-skill="ML"></div>
+				</li>
+				<li>
+					JavaScript (LinkedIn Certified)
+					<div class="bar advanced" data-skill="JS"></div>
+				</li>
+				<li>
+					Problem-Solving
+					<div class="bar advanced" data-skill="PS"></div>
+				</li>
+				<li>
+					Git
+					<div class="bar basic" data-skill="Git"></div>
+				</li>
+				<li>
+					Object-Oriented Programming (LinkedIn Certified)
+					<div class="bar expert" data-skill="OOP"></div>
+				</li>
+				<li>
+					Agile Methadologies (LinkedIn Certified)
+					<div class="bar advanced" data-skill="Agile"></div>
+				</li>
+				<li>
+					MATLAB
+					<div class="bar basic" data-skill="MATLAB"></div>
+				</li>
+				<li>
+					TensorFlow
+					<div class="bar basic" data-skill="TF"></div>
+				</li>
+				<li>
+					Java
+					<div class="bar advanced" data-skill="Java"></div>
+				</li>
+				<li>
+					Python (Programing Language)
+					<div class="bar intermediate" data-skill="Python"></div>
+				</li>
+				<li>
+					Android Development
+					<div class="bar intermediate" data-skill="Android"></div>
+				</li>
+				<li>
+					Deep Learning
+					<div class="bar basic" data-skill="DL"></div>
+				</li>
+				<li>
+					scikit-learn
+					<div class="bar intermediate" data-skill="SKlearn"></div>
+				</li>
+				<li>
+					Julia
+					<div class="bar basic" data-skill="Julia"></div>
+				</li>
+				<li>
+					C#
+					<div class="bar advanced" data-skill="C#"></div>
+				</li>
+				<li>
+					Algorithms
+					<div class="bar expert" data-skill="Algo."></div>
+				</li>
+				<li>
+					Data Structures
+					<div class="bar expert" data-skill="DS"></div>
+				</li>
+				<li>
+					Data Classification
+					<div class="bar intermediate" data-skill="Data Classification"></div>
+				</li>
+				<li>
+					Firebase
+					<div class="bar intermediate" data-skill="Firebase"></div>
+				</li>
+				<li>
+					Mentoring
+					<div class="bar intermediate" data-skill="Mentoring"></div>
+				</li>
+				<li>
+					Leadership
+					<div class="bar basic" data-skill="Leadership"></div>
+				</li>
+				<li>
+					Teamwork
+					<div class="bar intermediate" data-skill="Teamwork"></div>
+				</li>
+				<li>
+					Node.js
+					<div class="bar learning" data-skill="Node.js"></div>
+				</li>
+				<li>
+					MongoDB
+					<div class="bar learning" data-skill="MongoDB"></div>
+				</li>
 			</ul>
 		</div>
-    </section>
-    
+	</section>
+
 	<footer class="footer text-center">
 		<div class="container">
 			<p class="text-muted small mb-0" style="padding-top: 4mm; padding-bottom: 0mm;">Copyright &copy; 2021 Ahmed
